@@ -1,0 +1,66 @@
+.hero {
+	background: url(../images/bg-block-1.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	padding: 117px 0 118px 0;
+}
+.container__row {
+	display: flex;
+}
+.info-wrapper {
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		font-size: $titleBlockBig;
+		font-family: Aleo;
+		color: $white-color;
+		margin: 100px 0 50px 0px;
+	}
+	&__text {
+		padding-bottom: 20px;
+	}
+	.text {
+		color: $beige;
+		display: flex;
+		width: 560px;
+		letter-spacing: 1.6px;
+		line-height: 26px;
+
+		&__bottom {
+			margin-bottom: 45px;
+		}
+	}
+}
+.btn-main {
+	font-family: Aleo;
+	margin-left: 80px;
+	&::before {
+		content: url(../images/bg-blue.svg);
+		position: absolute;
+		z-index: -1;
+		right: 1px;
+		top: 1px;
+		width: 100%;
+	}
+
+	.link {
+		&:hover {
+			text-decoration: underline;
+			color: rgb(70, 16, 7);
+		}
+		&:active {
+			color: rgb(139, 106, 38);
+		}
+	}
+}
+.image-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: flex-start;
+	&__mounts {
+		padding-left: 80px;
+	}
+}
