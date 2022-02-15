@@ -1,0 +1,48 @@
+// .header,
+.footer,
+.icons,
+.spain-hous,
+.spain-hous-2,
+.tourist {
+	display: none;
+}
+
+// burger menu
+
+.mobile-nav {
+	height: 25px;
+	border: none;
+	padding: 0;
+	background: none;
+
+	.mobile-nav__icon {
+		position: relative;
+		display: block;
+		background-color: rgb(14, 188, 241);
+		width: 42px;
+		height: 5px;
+		border: none;
+		box-shadow: inset 1px 2px 1px 0 rgba(14, 0, 0, 0.5);
+
+		&::after {
+			position: absolute;
+			left: 0;
+			top: -10px;
+			content: "";
+			display: block;
+			background-color: rgb(14, 188, 241);
+			width: 42px;
+			height: 5px;
+		}
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 10px;
+			content: "";
+			display: block;
+			background-color: rgb(14, 188, 241);
+			width: 42px;
+			height: 5px;
+		}
+	}
+}

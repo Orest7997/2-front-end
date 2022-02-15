@@ -16,7 +16,7 @@
 		font-size: $titleBlockBig;
 		font-family: Aleo;
 		color: $white-color;
-		margin: 100px 0 50px 0px;
+		padding: 100px 0 50px 0px;
 	}
 	&__text {
 		padding-bottom: 20px;
@@ -24,7 +24,7 @@
 	.text {
 		color: $beige;
 		display: flex;
-		width: 560px;
+		max-width: 560px;
 		letter-spacing: 1.6px;
 		line-height: 26px;
 
@@ -35,7 +35,6 @@
 }
 .btn-main {
 	font-family: Aleo;
-	margin-left: 80px;
 	&::before {
 		content: url(../images/bg-blue.svg);
 		position: absolute;
@@ -55,12 +54,26 @@
 		}
 	}
 }
+img {
+	width: 100%;
+}
 .image-wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
-	align-items: flex-start;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: end;
+	// align-items: center;
+	max-width: 100%;
+	overflow: hidden;
+
+	&__house {
+		max-width: 100%;
+		width: 350px;
+		padding-bottom: 15px;
+	}
 	&__mounts {
+		max-width: 100%;
+		width: 350px;
+		display: block;
 		padding-left: 80px;
 	}
 }
