@@ -1,0 +1,108 @@
+html {
+	scroll-behavior: smooth;
+}
+.col {
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.col-1 {
+	width: calc(100% / 12);
+}
+
+.col-2 {
+	width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33333%;
+}
+
+.col-5 {
+	width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+	width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+	width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+	width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+	width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+	width: 100%;
+}
+
+[class*="col-"] {
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.page {
+	font-size: $sizepage;
+}
+.container {
+	max-width: $container-width;
+	margin: 0 auto;
+	padding: 0 $default-gap;
+	// width: 1800px;
+}
+
+.page {
+	font-family: "Josefin Sans";
+	font-size: 16px;
+}
+.link {
+	text-decoration: none;
+	color: $white-color;
+}
+
+.btn {
+	font-size: 16px;
+	font-family: Aleo;
+	letter-spacing: 1.2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 228px;
+	height: 63px;
+	border: none;
+	background: #5474fd;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	z-index: 10;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	@include media("sm") {
+		font-size: 14px;
+		width: 150px;
+		height: 48px;
+	}
+
+	@include media("sm") {
+		font-size: 12px;
+		width: 130px;
+		height: 46px;
+	}
+}
